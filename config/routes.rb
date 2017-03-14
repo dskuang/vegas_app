@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root to: "restaurants#index"
+  root to: "site#landing_page"
 
   get 'users/new', to: 'users#new'
   get 'users/index', to: 'users#index'
@@ -10,13 +10,7 @@ Rails.application.routes.draw do
   post 'session/create', to: 'session#create'
   post 'session/destroy', to: 'session#destroy'
 
-  get 'restaurants/index', to: 'restaurants#index'
-  get 'restaurants/all', to: 'restaurants#all'
-  get 'restaurants/show', to: 'restaurants#show'
-  post 'restaurants/create', to: 'restaurants#create'
-  post 'restaurants/update', to: 'restaurants#update'
-  get  'restaurants/food_items', to: 'restaurants#food_items'
-  get 'restaurants/search', to: 'restaurants#search'
+  get 'site/landing_page', to: 'site#landing_page'
 
   post 'food_items/add', to: 'food_items#add'
   post 'food_items/change_item_lock', to: 'food_items#change_item_lock'

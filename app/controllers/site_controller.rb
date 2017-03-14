@@ -1,10 +1,7 @@
-class RestaurantsController < ApplicationController
-  def index
-  end
-
-  def all
-    restaurants = Restaurant.all.order(:name)
-    render json: restaurants
+class SiteController < ApplicationController
+  def landing_page
+    # restaurants = Restaurant.all.order(:name)
+    # render json: restaurants
   end
 
   def show

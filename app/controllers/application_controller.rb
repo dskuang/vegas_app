@@ -2,8 +2,8 @@ class ApplicationController < ActionController::Base
   # Expose these methods to the views
   helper_method :current_user, :signed_in?
 
-  before_filter :require_signed_in!
-  around_filter :process_request
+  # before_filter :require_signed_in!
+  # around_filter :process_request
 
   private
   def current_user
