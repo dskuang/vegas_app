@@ -19,6 +19,8 @@
 //= require bootstrap
 //= require skel.min
 //= require jquery.min
+//= require jquery.scrolly.min
+//= require jquery.scrollex.min
 //= require main
 //= require util
 //= require bootstrap-datepicker
