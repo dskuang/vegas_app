@@ -1,14 +1,12 @@
 class SiteController < ApplicationController
   def landing_page
-    # restaurants = Restaurant.all.order(:name)
-    # render json: restaurants
   end
 
-  def show
+  def night_clubs
     @restaurant = Restaurant.find(params[:restaurant_id])
   end
 
-  def update
+  def day_clubs
     restaurant = Restaurant.find(params[:restaurant_id])
     restaurant.update_attributes!(restaurant_options)
     render json: restaurant

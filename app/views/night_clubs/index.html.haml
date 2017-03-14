@@ -1,7 +1,7 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title
+    %title Landing - Forty by HTML5 UP
     %meta{:charset => "utf-8"}/
     %meta{:content => "width=device-width, initial-scale=1, user-scalable=no", :name => "viewport"}/
     /[if lte IE 8] <script src="assets/js/ie/html5shiv.js"></script>
@@ -11,7 +11,8 @@
     / Wrapper
     #wrapper
       / Header
-      %header#header.alt
+      / Note: The "styleN" class below should match that of the banner element.
+      %header#header.alt.style2
         %a.logo{:href => "index.html"}
           %strong Forty
           %span by HTML5 UP
@@ -34,73 +35,70 @@
           %li
             %a.button.fit{:href => "#"} Log In
       / Banner
-      %section#banner.major
+      / Note: The "styleN" class below should match that of the header element.
+      %section#banner.style2
         .inner
+          %span.image
+            = image_tag 'temp_imgs/pic07.jpg'
           %header.major
-            %h1 Hi, my name is Forty
+            %h1 Night Clubs
           .content
             %p
-              A responsive site template designed by HTML5 UP
+              Lorem ipsum dolor sit amet nullam consequat
               %br/
-              and released under the Creative Commons.
-            %ul.actions
-              %li
-                %a.button.next.scrolly{:href => "#one"} Get Started
+              sed veroeros. tempus adipiscing nulla.
       / Main
       #main
         / One
-        %section#one.tiles
-          %article
-            %span.image
-              = image_tag 'temp_imgs/pic01.jpg'
+        %section#one
+          .inner
             %header.major
-              %h3
-                = link_to 'Night Clubs', '/night_clubs/index', method: :get, class: 'link'
-              %p Ipsum dolor sit amet
-          %article
-            %span.image
-              = image_tag 'temp_imgs/pic02.jpg'
-            %header.major
-              %h3
-                %a.link{:href => "landing.html"} Tempus
-              %p feugiat amet tempus
-          %article
-            %span.image
-              = image_tag 'temp_imgs/pic03.jpg'
-            %header.major
-              %h3
-                %a.link{:href => "landing.html"} Magna
-              %p Lorem etiam nullam
-          %article
-            %span.image
-              = image_tag 'temp_imgs/pic04.jpg'
-            %header.major
-              %h3
-                %a.link{:href => "landing.html"} Ipsum
-              %p Nisl sed aliquam
-          %article
-            %span.image
-              = image_tag 'temp_imgs/pic05.jpg'
-            %header.major
-              %h3
-                %a.link{:href => "landing.html"} Consequat
-              %p Ipsum dolor sit amet
-          %article
-            %span.image
-              = image_tag 'temp_imgs/pic06.jpg'
-            %header.major
-              %h3
-                %a.link{:href => "landing.html"} Etiam
-              %p Feugiat amet tempus
+              %h2 Sed amet aliquam
+            %p Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna.
         / Two
-        %section#two
+        %section#two.spotlights
+          %section
+            %a.image{:href => "generic.html"}
+              = image_tag 'temp_imgs/pic08.jpg', 'data-position' => 'center center'
+            .content
+              .inner
+                %header.major
+                  %h3 Orci maecenas
+                %p Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.
+                %ul.actions
+                  %li
+                    %a.button{:href => "generic.html"} Learn more
+          %section
+            %a.image{:href => "generic.html"}
+              = image_tag 'temp_imgs/pic09.jpg', 'data-position' => 'top center'
+            .content
+              .inner
+                %header.major
+                  %h3 Rhoncus magna
+                %p Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.
+                %ul.actions
+                  %li
+                    %a.button{:href => "generic.html"} Learn more
+          %section
+            %a.image{:href => "generic.html"}
+              = image_tag 'temp_imgs/pic10.jpg', 'data-position' => '25% 25%'
+            .content
+              .inner
+                %header.major
+                  %h3 Sed nunc ligula
+                %p Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.
+                %ul.actions
+                  %li
+                    %a.button{:href => "generic.html"} Learn more
+        / Three
+        %section#three
           .inner
             %header.major
               %h2 Massa libero
             %p Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.
             %ul.actions
               %li
-                %a.button.next{:href => "landing.html"} Get Started
+                %a.button.next{:href => "generic.html"} Get Started
       / Contact
       %section#contact
         .inner

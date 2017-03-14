@@ -12,6 +12,9 @@ Rails.application.routes.draw do
 
   get 'site/landing_page', to: 'site#landing_page'
 
+  get 'night_clubs/index', to: 'night_clubs#index'
+  get 'night_clubs/show', to: 'night_clubs#show'
+
   post 'food_items/add', to: 'food_items#add'
   post 'food_items/change_item_lock', to: 'food_items#change_item_lock'
   post 'food_items/delete', to: 'food_items#delete'
